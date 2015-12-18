@@ -1,0 +1,12 @@
+<template name="SRMap">
+    <div class="map-container" >
+        {{> googleMap name="map" options=mapOptions}}
+    </div>
+    <div class="searchResult-container">
+        {{> SearchResult}}
+    </div>
+
+    <div class="details-container">
+        {{> Panel origin="right" hidden="true"}}
+    </div>
+</template>

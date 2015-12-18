@@ -1,0 +1,73 @@
+.panel-container {
+  position: fixed;
+  top: 64px;
+  height: 100%;
+  width: 400px;
+  right: 0;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+  .panel-container.right {
+    right: 0;
+  }
+    .panel-container.right.hidden {
+      right: -400px;
+    }
+    .panel-container.right .panel-container-toggler {
+      left: -34px;
+    }
+      .panel-container.right .panel-container-toggler .rightArrow {
+        display: block;
+      }
+      .panel-container.right .panel-container-toggler .leftArrow {
+        display: none;
+      }
+      .panel-container.right.hidden .panel-container-toggler .rightArrow {
+        display: none;
+      }
+      .panel-container.right.hidden .panel-container-toggler .leftArrow {
+        display: block;
+      }
+  .panel-container.left {
+    left: 0;
+  }
+    .panel-container.left.hidden {
+      left: -400px;
+    }
+    .panel-container.left .panel-container-toggler {
+      right: -34px;
+    }
+      .panel-container.left .panel-container-toggler .rightArrow {
+        display: none;
+      }
+      .panel-container.left .panel-container-toggler .leftArrow {
+        display: block;
+      }
+      .panel-container.left.hidden .panel-container-toggler .rightArrow {
+        display: block;
+      }
+      .panel-container.left.hidden .panel-container-toggler .leftArrow {
+        display: none;
+      }
+
+
+
+  .panel-container .panel-container-toggler {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+  }
+  .panel-container .panel-container-toggler .card-panel {
+    padding: 15px 5px 10px;
+  }
+  .panel-container .panel-container-content {
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+  }
+  .panel-container .panel-container-content > .card {
+    margin: 0;
+  }

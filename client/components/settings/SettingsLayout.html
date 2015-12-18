@@ -1,0 +1,35 @@
+<template name="SettingsLayout">
+    <div class="row">
+        <div class="col m12">
+            <h5><i class="material-icons">settings</i> Settings</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m4 s12">
+            <b>Super Admin</b>
+            <div class="collection saNav">
+                <a href="#!" class="collection-item" data-template="ServiceTypes">Service Request Types</a>
+                <a href="#!" class="collection-item">Users</a>
+                <a href="#!" class="collection-item" data-template="Companies">Companies</a>
+                <a href="#!" class="collection-item" data-template="bugtrackerBugs">Bug Tracker</a>
+            </div>
+            <b>Admin</b>
+            <div class="collection saNav">
+                <a href="#!" class="collection-item">Users</a>
+                <a href="#!" class="collection-item">Customers</a>
+                <a href="#!" class="collection-item">Company</a>
+                <a href="#!" class="collection-item">Vehicles</a>
+                <a href="#!" class="collection-item">Hubs</a>
+            </div>
+
+            <b>User</b>
+            <div class="collection saNav">
+                <a href="#!" class="collection-item">Profile</a>
+                <a href="#!" class="collection-item">Account</a>
+            </div>
+        </div>
+        <div class="col m8 s12">
+            {{> Template.dynamic template=tab data=tabData}}
+        </div>
+    </div>
+</template>

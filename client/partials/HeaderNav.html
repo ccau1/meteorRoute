@@ -1,0 +1,32 @@
+<template name="HeaderNav">
+
+    <div class="left">
+        <!--<form>-->
+            <div class="input-field">
+                <input type="search" id="search-field" class="field" required maxlength="">
+                <label for="search-field"><i class="mdi-action-search"></i></label>
+                <i class="search-field-clear mdi-navigation-close close"></i>
+            </div>
+        <!--</form>-->
+    </div>
+    <div class="right">
+        <div class="right">
+            {{> atNavButton }}
+        </div>
+        <ul id="nav-mobile" class="right">
+            <li class="viewDate-container triggerViewDate"><input type="date" class="viewDate datepicker"><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Set View Date"><i class="material-icons">date_range</i></a></li>
+            <li><a href="#MessengerModal" class="modal-trigger tooltipped" data-position="bottom" data-tooltip="Chat Messenger"><i class="material-icons">chat_bubble</i></a></li>
+            <li><a href="#DashboardModal" class="modal-trigger tooltipped" data-position="bottom" data-tooltip="Statistics"><i class="material-icons">insert_chart</i></a></li>
+        </ul>
+        <div class="right">
+
+        </div>
+    </div>
+
+    <!--<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>-->
+    <!--<ul class="side-nav" id="mobile-demo">-->
+        <!--<li><a href="#MessengerModal" class="modal-trigger"><i class="material-icons">chat_bubble</i></a></li>-->
+        <!--<li><a href="#DashboardModal" class="modal-trigger"><i class="material-icons">dashboard</i> Stats</a></li>-->
+        <!--<li>{{> atNavButton }}</li>-->
+    <!--</ul>-->
+</template>

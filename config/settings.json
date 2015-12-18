@@ -1,0 +1,15 @@
+{
+  "public": {
+    "ga": {
+      "account": "UA-45853314-1"
+    },
+    "persistent_session": {
+      "default_method": "persistent"
+    },
+    "bugtracker": {
+      "permittedUsers": []
+    }
+  },
+  "private": {
+  }
+}

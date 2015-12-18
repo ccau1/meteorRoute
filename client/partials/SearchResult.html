@@ -1,0 +1,18 @@
+<template name="SearchResult">
+    <ul class="searchResult collapsible popout {{#unless hasSearchValue}}hidden{{/unless}}" data-collapsible="accordion">
+        {{#each results}}
+            <li class="">
+                <div class="collapsible-header">
+                    {{#if type="location"}}<i class="material-icons">place</i>{{/if}}
+                    {{header}}
+                </div>
+                <div class="collapsible-body" style="display: block!important;">
+                    <div style="height: 300px;">
+                        {{> googleMap name="searchResultDetailsMap" options=mapOptions}}
+                    </div>
+                    {{content}}
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+</template>
